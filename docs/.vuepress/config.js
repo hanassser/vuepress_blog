@@ -1,16 +1,57 @@
 module.exports = {
   themeConfig: {
     logo: '/assets/img/img.gif',
+    sidebar: {
+      '/learn/foundations/': [
+        '',     /* /foo/ */
+        'Intro',  /* /foo/one.html */
+        'Number_Systems',
+        'Data_Storage',
+        'Operations_on_Data',
+        'Computer_Organization',
+         'Computer_Networks_and_Internet',
+         'Operating_Systems',
+        'Algorithms',
+         'Programming_Languages',
+         'Software_Engineering',
+        'Data_Structure',
+        'Abstract_Data_Types',
+        'File_Structure',
+        'Databases',
+        'Data_Compression',
+        'Security',
+        'Theory_of_Computation',
+        'Artificial_Intelligence',
+        
+
+      ],
+        '/learn/computer_organization/': [
+            '', 
+        ],
+        '/learn/operating_systems/': [
+            '', 
+        ],
+        '/learn/network/': [
+            '', 
+        ],
+        '/learn/data_structure_algorithms/': [
+            '', 
+        ],
+      
+    },
+    displayAllHeaders: true,
     nav: [
       { text: 'Home', link: '/' },
       
       { text: 'Important Basic',
+      link: '/learn/',
         items: [
-          { text: 'Foundations of Computer Science', link: '/learn/computer-organization/c-o' },
-          { text: 'Computer Organization', link: '/learn/computer-organization/c-o' },
-          { text: 'Computer Network', link: '/learn/computer-network/' },
-          { text: 'Operating Systems', link: '/learn/operating-systems/' },
-          { text: 'Data Structure & Algorithms', link: '/learn/data-structure-algorithms/' }
+          { text: 'Foundations of Computer Science', link: '/learn/foundations/' },
+          { text: 'Computer Organization', link: '/learn/computer_organization/' }, 
+          { text: 'Operating Systems', link: '/learn/operating_systems/' },
+          { text: 'Computer Network', link: '/learn/network/' },
+         
+          { text: 'Data Structure & Algorithms', link: '/learn/data_structure_algorithms/' }
         ]
       },
       { text: 'Others',
