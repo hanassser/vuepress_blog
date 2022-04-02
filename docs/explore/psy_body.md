@@ -1,5 +1,5 @@
 ---
-title: yooo
+title: Psychology & Body
 date: 2020/05/29
 ---
 

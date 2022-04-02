@@ -1,6 +1,10 @@
 module.exports = {
+    title: "Hang's Blog",
+    
   themeConfig: {
-    logo: '/assets/img/img.gif',
+    logo: '/assets/img/img.jpg',
+    description: "Tech and Life Blog",
+    smoothScroll: true,
     sidebar: {
       '/learn/foundations/': [
         '',     /* /foo/ */
@@ -30,6 +34,13 @@ module.exports = {
         ],
         '/learn/operating_systems/': [
             '', 
+            '1_overview',
+            '2_process_management',
+            '3_memory_management',
+            '4_storage_management',
+            '5_protection_and_security',
+            '6_advanced_topics',
+            '7_case_study'
         ],
         '/learn/network/': [
             '', 
@@ -37,6 +48,39 @@ module.exports = {
         '/learn/data_structure_algorithms/': [
             '', 
         ],
+        '/others/languages/':[
+            '',
+            'javascript',
+            'java'
+        ],
+        '/others/front-end/':[
+            '',
+            'react',
+            'vue'
+        ],
+        '/others/back-end/':[
+            '',
+            'nodejs',
+            'java-back'
+        ],
+        '/fall/':[
+            'cv',
+            'personal-problems',
+    
+            'some-words'
+        ],
+        '/explore/':[
+            'me',
+            'travel',
+    'dj-music',
+            'buddhism',
+            'psy_body',
+            'wisdom',
+            'dreams',
+            'magic'
+        ]
+        
+
       
     },
     displayAllHeaders: true,
@@ -56,21 +100,21 @@ module.exports = {
       },
       { text: 'Others',
         items: [
-         { text: 'Languages', link: '/others/javascript/' },
-         { text: 'Front-end', link: '/others/front-end/' },
-         { text: 'Back-end', link: '/others/back-end/' },
+         { text: 'Languages', items: [{ text: 'Javascipt', link: '/others/languages/javascript/' },{ text: 'Java', link: '/others/languages/java/' },] },
+         { text: 'Front-end', items: [{ text: 'React', link: '/others/front-end/react/' },{ text: 'Vue', link: '/others/front-end/vue/' },] },
+         { text: 'Back-end', items: [{ text: 'Node.js', link: '/others/back-end/nodejs/' },{ text: 'Java', link: '/others/back-end/java-back/' },] },
         ]
       },
       { text: 'How I Fall',
         items: [
-         { text: 'My Real Stories', link: '/fall/real-stories/' },
+         { text: 'CV of Real', link: '/fall/cv/' },
           { text: 'Personal Problems', link: '/fall/personal-problems/' },
           { text: 'Some Words', link: '/fall/some-words/' },
         ]
       },
       { text: 'Some Ideas',
         items: [
-          { text: 'Learning Structure', link: '/ideas/learning/' },
+          { text: 'Knowledge Structure!', link: '/ideas/structure/' },
           { text: 'Some Words', link: '/fall/some-words/' },
         ]
       },
@@ -80,9 +124,10 @@ module.exports = {
           { text: 'The world is infinite, and the journey itself is home', link: '/explore/travel/' },
           { text: 'DJ & Music', link: '/explore/dj-music/' },
           { text: 'Buddhism teaches me the most in my life', link: '/explore/buddhism/' },
-          { text: 'Psychology & Body', link: '/explore/psychology-body/' },
-          { text: 'Ancient chinese wisdom that I appreciate ', link: '/explore/chinese-wisdom/' },
-          { text: 'Some Dreams ', link: '/explore/some-dreams/' },{ text: 'Omdalarrarahang! ', link: '/explore/magic/' },
+          { text: 'Psychology & Body', link: '/explore/psy_body/' },
+          { text: 'Wisdom that I appreciate', link: '/explore/wisdom/' },
+          { text: 'Some Dreams ', link: '/explore/dreams/' },
+          { text: 'Omdalarrarahang! ', link: '/explore/magic/' },
         ]
       },
       { text: 'teest',
